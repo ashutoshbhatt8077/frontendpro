@@ -1,0 +1,208 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+footer {
+    min-height: 5vh;
+    background-color: rgba(131, 173, 63, 0.703);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 95vh;
+    background-image: url('image/43289.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.heading {
+    background-color: rgba(240, 248, 255, 0.338);
+    box-shadow: 0 0 50px 10px white;
+    color: rgb(46, 53, 53);
+    height: 5vh;
+}
+
+.box1 {
+    height: 43vh;
+    max-width:500px ;
+    background-color: rgba(0, 255, 255, 0.212);
+    border-radius: 20px;
+    margin: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     margin-right: 40vw;
+}
+
+.box2 {
+     max-width:500px ;
+    height: 43vh;
+    background-color: rgba(127, 255, 212, 0.342);
+    border-radius: 20px;
+    margin: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40vw;
+}
+
+.contenti{
+    height: 90vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.temp {
+    border-radius: 20px;
+    margin: 10px;
+    height: 80%;
+    width: 40%;
+    background-color: rgba(255, 0, 0, 0.368);
+    box-shadow: 0 0 20px 10px rgba(11, 43, 187, 0.412);
+}
+
+.windsp {
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.489);
+    height: 80%;
+    width: 40%;
+    box-shadow: 0 0 20px 10px rgba(11, 43, 187, 0.412);
+}
+
+.rain {
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 255, 0.41);
+    height: 80%;
+    width: 40%;
+    box-shadow: 0 0 20px 10px rgba(11, 43, 187, 0.412);
+}
+
+.humi {
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgba(137, 43, 226, 0.423);
+    height: 80%;
+    width: 40%;
+    box-shadow: 0 0 20px 10px rgba(11, 43, 187, 0.412);
+}
+
+.temp:hover {
+    transform: scale(1.1);
+     background-color: rgba(255, 0, 0, 0.836);
+}
+
+.windsp:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.864);
+}
+
+.rain:hover {
+    transform: scale(1.1);
+     background-color: rgba(0, 0, 255, 0.816);
+}
+
+.humi:hover {
+    transform: scale(1.1);
+    background-color: rgba(137, 43, 226, 0.914);
+}
+
+.hed {
+    font-size: 100%;
+    margin: 10px;
+    background-color: rgba(10, 10, 10, 0.547);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.374);
+}
+
+.imgt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgi {
+    background-size: contain;
+    background-position: center;
+    margin-top: 10px;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10%;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myimg {
+
+    width: 200px;    /* set fixed width */
+    height: auto;    /* keep aspect ratio */
+    /* or */
+    max-width: 100%; /* responsive to parent */
+    height: auto;
+}
+.info1 p,.info2 p,.info3 p,.info4 p{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: inline;
+    padding: 4px;
+     font-size: 100%;
+}
+/* Responsive Design */
+@media (max-width: 568px) {
+    /* Stack big boxes vertically */
+    .contenti {
+        flex-direction: column;
+        padding: 1vh;
+    }
+
+    .box1, .box2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust inner boxes */
+    .temp, .windsp, .rain, .humi {
+        flex: 1 1 100%;
+        max-width: 90%;
+
+    }
+
+    /* Reduce heading size */
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Reduce image size */
+    .imgi {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 1.2rem;
+    }
+
+    .hed p {
+        font-size: 0.9rem;
+    }
+
+    .imgi {
+        height: 50px;
+        width: 50px;
+    }
+}

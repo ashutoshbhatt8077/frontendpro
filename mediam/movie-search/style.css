@@ -1,0 +1,107 @@
+/* Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, red, black);
+    color: white;
+}
+
+/* Title Section */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Centers search bar horizontally */
+    gap: 20px;
+}
+
+/* Search Box */
+.search {
+    display: flex; /* Keep flex for centering */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.525);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.288);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 1rem;
+}
+
+/* Movies Section */
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    color: white;
+    font-size: 0.9rem;
+}
+.label{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+.movie-card{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.589);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.movie-card:hover{
+    transform: scale(1.05);
+}
+.movie-card:active{
+    transform: scale(1);
+}
+.link{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 5px 2px white;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}

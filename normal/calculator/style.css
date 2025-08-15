@@ -1,0 +1,143 @@
+/* RESET DEFAULTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to right, #00c6ff, hwb(213 0% 0%));
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    background:linear-gradient(to top,black,#00c6ff,black);
+    color: #292929;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10;
+}
+/* MAIN SECTION */
+.main {
+    background-image: url('num.jpeg');
+    background-repeat: repeat-y; /* Repeat vertically */
+    background-size: 100% auto; /* Match width, keep natural height */
+    animation: scrollBackground 2s linear infinite; /* Adjust speed */
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vh;
+    padding-bottom: 15vh;
+}
+
+/* Keyframes for continuous scroll */
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 147px; /* Move exactly the image height */
+    }
+}
+
+
+
+/* CALCULATOR CONTAINER */
+.container {
+    width: 300px;
+    background: #7f7f7fad;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* DISPLAY */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* BUTTON STYLE */
+.btn {
+    background-color: #ffa200;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+    background-color: #ff8c00;
+    transform: scale(1.05);
+}
+
+/* OPERATOR BUTTONS */
+.operator {
+    background-color: #ff5757;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #ff2c2c;
+}
+
+/* EQUAL BUTTON */
+.equal-btn {
+    background-color: #28a745;
+    color: white;
+    grid-column: span 1;
+}
+
+.equal-btn:hover {
+    background-color: #218838;
+}
+
+/* ZERO BUTTON */
+.zero-btn {
+    grid-column: span 2;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #a4a4a4;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}

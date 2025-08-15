@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(3, 12, 144), rgb(48, 97, 171));
+    min-height: 100vh;
+    place-content: center;
+}
+
+.container {
+    background-color: rgb(32, 176, 224);
+    box-shadow: 0 0 100px 5px rgba(0, 0, 0, 0.708);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 100px 10px black;
+    border-radius: 10px;
+    user-select: none;
+    display: inline-block;
+}
+
+#generate {
+    background-color: rgba(255, 255, 255, 0.432);
+    border-radius: 1rem;
+    padding: 0.5em;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0 0 10px 5px black;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+#generate:hover {
+    background-color: aqua;
+    transform: scale(1.1);
+}
+
+.color-box {
+    height: 100px;
+    width: 100px;
+    display: flex;               
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0.1rem;
+    box-shadow: 0 0 10px 1px black;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.color-box:hover {
+    transform: scale(1.2);
+}
+
+#colorpalet {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    justify-items: center;
+}
+
+/* Small popup when copied */
+.copied-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 999;
+}
