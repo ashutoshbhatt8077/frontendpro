@@ -1,0 +1,99 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+    color: aliceblue;
+    transition: background 0.3s, color 0.3s;
+}
+
+.header button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: #00aeff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header button:hover {
+    background-color: #007bbd;
+}
+
+/* Main Layout */
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 70vh;
+    width: 100%;
+    background: #00aeff;
+    padding: 20px;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Sections */
+section {
+    width: 45%;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    background-color: bisque;
+    color: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Task Lists */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+ul li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li.completed {
+    background: #d4ffd4;
+    text-decoration: line-through;
+}
+
+/* Footer */
+footer {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    background: #868686;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

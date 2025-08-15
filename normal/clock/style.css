@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .main {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.clock-container {
+  text-align: center;
+}
+
+#time {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+#date {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #0056b3;
+  box-shadow: #00f2ff 0px 0px 10px;
+}
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 20vh;
+  width: 100vw;
+  text-align: center;
+  justify-content: center;
+  font-size: small;
+  background: #868686;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
