@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Projects Showcase</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: #0f172a; color: #f8fafc; padding: 2rem; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+    header { text-align: center; margin-bottom: 2.5rem; }
+    h1 { font-size: 2.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+    p { color: #94a3b8; }
+    .section-title { width: 100%; max-width: 900px; margin: 1.5rem 0 1rem; font-size: 1.25rem; color: #38bdf8; border-bottom: 1px solid #334155; padding-bottom: 0.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; width: 100%; max-width: 900px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 1.25rem; text-decoration: none; color: inherit; transition: transform 0.2s, border-color 0.2s; }
+    .card:hover { transform: translateY(-4px); border-color: #38bdf8; }
+    .card h2 { font-size: 1.15rem; margin-bottom: 0.4rem; color: #f1f5f9; }
+    .card p { font-size: 0.875rem; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Frontend Projects</h1>
+    <p>A collection of mini applications built with HTML, CSS, and JavaScript</p>
+  </header>
+
+  <h2 class="section-title">Medium Level Projects</h2>
+  <div class="grid">
+    <a class="card" href="./mediam/markdown/">
+      <h2>Markdown Previewer</h2>
+      <p>Real-time live markdown text editor and parser.</p>
+    </a>
+    <a class="card" href="./mediam/movie-search/">
+      <h2>Movie Search</h2>
+      <p>Search movie database with dynamic fetch and UI display.</p>
+    </a>
+  </div>
+
+  <h2 class="section-title">Foundational Projects</h2>
+  <div class="grid">
+    <a class="card" href="./normal/calculator/">
+      <h2>Calculator</h2>
+      <p>Clean UI calculator handling arithmetic logic.</p>
+    </a>
+    <a class="card" href="./normal/clock/">
+      <h2>Clock</h2>
+      <p>Interactive real-time clock application.</p>
+    </a>
+    <a class="card" href="./normal/colorpallet/">
+      <h2>Color Palette Generator</h2>
+      <p>Interactive color swatch generator and palette viewer.</p>
+    </a>
+    <a class="card" href="./normal/todo/">
+      <h2>To-Do App</h2>
+      <p>Interactive task management tool with CRUD capabilities.</p>
+    </a>
+  </div>
+</body>
+</html>
